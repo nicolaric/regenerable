@@ -1,0 +1,41 @@
+enum SymptomsAddressedEnum {
+  STRESS
+}
+
+enum HabitEnum {
+  WEAKENING_BAD
+  STRENGTHENING_GOOD
+}
+
+enum EffortEnum {
+  BEGINNER
+  INTERMEDIATE
+  HARD
+}
+
+enum AreasOfLifeEnum {
+  HEALTH_WELLBEING
+  CAREER_PURPOSE
+  PERSONAL_SPIRITUAL
+  FAMILY
+  LOVE_LIFE
+  FRIENDS_SOCIAL
+  PERSONAL_FINANCE
+  COMMUNITY
+  FUN_RECREATION
+  PHYSICAL_ENVIRONMENT
+}
+
+type Experiment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  areas: [AreasOfLifeEnum!]!
+  duration: Int!
+  effort: EffortEnum!
+  habit: HabitEnum!
+  symptoms_addressed: [SymptomsAddressedEnum!]!
+  description: String!
+  success_waypoints: [String]
+  failure_waypoints: [String]
+}
+ 

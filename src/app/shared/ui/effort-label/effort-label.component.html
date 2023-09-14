@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="effort">
+    <div *ngSwitchCase="'BEGINNER'" class="px-2 py-1 bg-green-100 rounded-md text-slate-600">Beginner</div>
+    <div *ngSwitchCase="'INTERMEDIATE'" class="px-2 py-1 bg-yellow-100 rounded-sm text-slate-600">Intermediate</div>
+    <div *ngSwitchCase="'HARD'" class="px-2 py-1 bg-red-100 rounded-sm text-slate-600">Hard</div>
+</ng-container>
