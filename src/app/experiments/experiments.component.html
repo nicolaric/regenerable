@@ -1,0 +1,17 @@
+<div class="p-12">
+  <div *ngFor="let experiment of (experiments | async)?.items" class="bg-white shadow-md h-56 w-56 inline-flex rounded-md">
+    <a [routerLink]="[experiment.id]" class="w-full">
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        <h1 class="text-3xl">
+          {{ experiment.name }}
+        </h1>
+        <div class="flex items-center content-between pt-2">
+          <app-effort-label [effort]="experiment.effort"></app-effort-label>
+          <div class="px-2 text-slate-500">
+            {{ experiment.duration }}min/day
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

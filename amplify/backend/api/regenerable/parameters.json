@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "regenerable",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-09-12T21:11:33.147Z"
+}

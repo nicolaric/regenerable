@@ -1,0 +1,97 @@
+<ng-container *ngIf="experiment$ | async as experiment">
+  <div class="max-w-4xl mx-auto py-8">
+    <h1 class="text-5xl">{{ experiment.name }}</h1>
+    <div class="py-4">
+      <div class="bg-white rounded-xl border border-gray-200">
+        <table>
+          <tr>
+            <td>Areas of Life</td>
+            <td class="flex">
+              <app-area-of-life-label
+                class="px-2 first:pl-0 last:pr-0"
+                *ngFor="let area of experiment.areas"
+                [areaOfLife]="area"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Duration (min/day)</td>
+            <td>{{ experiment.duration }}</td>
+          </tr>
+          <tr>
+            <td>Effort</td>
+            <td class="flex">
+              <app-effort-label [effort]="experiment.effort"></app-effort-label>
+            </td>
+          </tr>
+          <tr>
+            <td>Habit</td>
+            <td class="flex">
+              <app-habit-label [habit]="experiment.habit"></app-habit-label>
+            </td>
+          </tr>
+          <tr>
+            <td>Symptoms Addressed</td>
+            <td class="flex">
+              <app-symptoms-label
+                *ngFor="let symptom of experiment.symptomsAddressed"
+                [addressedSymptom]="symptom"
+                class="px-2 first:pl-0 last:pr-0"
+              ></app-symptoms-label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="pb-4">
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-xl pb-2">❓ Why?</h2>
+        <p>{{ experiment.description }}</p>
+      </div>
+    </div>
+    <div class="pb-4">
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-xl pb-2">🏆 Desired Outcome</h2>
+        <p>TBD</p>
+      </div>
+    </div>
+    <div class="pb-4">
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-xl pb-2">🕐 Effort</h2>
+        <p>{{ experiment.effort }} minutes / day</p>
+      </div>
+    </div>
+    <div class="pb-4">
+      <div class="bg-white rounded-xl border border-gray-200 p-4 flex">
+        <div>
+          <h2 class="text-xl pb-2">✅ Success Waypoints</h2>
+          <p>
+            If this occurs, the experiment is going in the
+            <span class="text-green-500"><b>RIGHT</b></span> direction
+          </p>
+          <ul>
+            <li *ngFor="let waypoint of experiment.successWaypoints">
+              {{ waypoint }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl pb-2">❌ Failure Waypoints</h2>
+          <p>
+            If this occurs, the experiment is going in the
+            <span class="text-red-500"><b>WRONG</b></span> direction
+          </p>
+          <ul>
+            <li *ngFor="let waypoint of experiment.failureWaypoints"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <h2 class="text-xl pb-2">⏳ Time Frame</h2>
+        <p>TBD</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

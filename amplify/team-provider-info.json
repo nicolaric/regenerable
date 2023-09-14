@@ -1,0 +1,32 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-regenerable-staging-72505-authRole",
+      "UnauthRoleArn": "arn:aws:iam::682244917643:role/amplify-regenerable-staging-72505-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::682244917643:role/amplify-regenerable-staging-72505-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-regenerable-staging-72505-deployment",
+      "UnauthRoleName": "amplify-regenerable-staging-72505-unauthRole",
+      "StackName": "amplify-regenerable-staging-72505",
+      "StackId": "arn:aws:cloudformation:eu-central-1:682244917643:stack/amplify-regenerable-staging-72505/ae1b9590-43e1-11ee-9092-0292abfcc7dc",
+      "AmplifyAppId": "d1skou44jhjoae"
+    },
+    "categories": {
+      "auth": {
+        "Regenerable": {}
+      },
+      "storage": {
+        "s3regenerablestorage623682d8": {}
+      },
+      "function": {
+        "regenerable": {
+          "deploymentBucketName": "amplify-regenerable-staging-72505-deployment",
+          "s3Key": "amplify-builds/regenerable-4a694639533658654e32-build.zip"
+        }
+      },
+      "api": {
+        "regenerable": {}
+      }
+    }
+  }
+}
