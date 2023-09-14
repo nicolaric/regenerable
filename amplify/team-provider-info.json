@@ -17,15 +17,6 @@
       },
       "storage": {
         "s3regenerablestorage623682d8": {}
-      },
-      "function": {
-        "regenerable": {
-          "deploymentBucketName": "amplify-regenerable-staging-72505-deployment",
-          "s3Key": "amplify-builds/regenerable-4a694639533658654e32-build.zip"
-        }
-      },
-      "api": {
-        "regenerable": {}
       }
     }
   }

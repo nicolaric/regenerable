@@ -56,24 +56,6 @@
     }
   },
   "function": {},
-  "parameters": {
-    "AMPLIFY_function_regenerable_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "regenerable"
-        }
-      ]
-    },
-    "AMPLIFY_function_regenerable_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "regenerable"
-        }
-      ]
-    }
-  },
   "storage": {
     "s3regenerablestorage623682d8": {
       "dependsOn": [],
