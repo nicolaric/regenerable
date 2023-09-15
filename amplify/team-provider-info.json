@@ -17,6 +17,16 @@
       },
       "storage": {
         "s3regenerablestorage623682d8": {}
+      },
+      "function": {
+        "amplitudeproxy": {
+          "deploymentBucketName": "amplify-regenerable-staging-72505-deployment",
+          "s3Key": "amplify-builds/amplitudeproxy-4757366e6c2b6e594837-build.zip"
+        }
+      },
+      "api": {
+        "regenerable": {},
+        "amplitudeproxy": {}
       }
     }
   }

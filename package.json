@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.2.3",
     "@angular/animations": "~16.2.0",
     "@angular/common": "~16.2.0",
     "@angular/compiler": "~16.2.0",

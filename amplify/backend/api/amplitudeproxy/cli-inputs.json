@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/amplitude": {
+      "name": "/amplitude",
+      "lambdaFunction": "amplitudeproxy",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

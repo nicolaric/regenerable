@@ -1,6 +1,6 @@
 <ng-container *ngIf="experiment$ | async as experiment">
   <div class="max-w-4xl mx-auto py-8">
-    <h1 class="text-5xl">{{ experiment.name }}</h1>
+    <h1 class="text-5xl text-center">{{ experiment.name }}</h1>
     <div class="py-4">
       <div class="bg-white rounded-xl border border-gray-200">
         <table>
@@ -82,7 +82,7 @@
             <span class="text-red-500"><b>WRONG</b></span> direction
           </p>
           <ul>
-            <li *ngFor="let waypoint of experiment.failureWaypoints"></li>
+            <li *ngFor="let waypoint of experiment.failureWaypoints">{{ waypoint }}</li>
           </ul>
         </div>
       </div>

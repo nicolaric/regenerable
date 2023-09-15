@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 import { ExperimentsComponent } from './experiments/experiments.component';
+import { AmplitudeService } from './shared/common/amplitude/amplitude.service';
 
 @Component({
   standalone: true,
@@ -13,4 +14,5 @@ import { ExperimentsComponent } from './experiments/experiments.component';
 })
 export class AppComponent {
   title = 'regenerable';
+  private amplitude = inject(AmplitudeService);
 }
