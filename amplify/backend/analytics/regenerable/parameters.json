@@ -1,0 +1,21 @@
+{
+    "appName": "regenerable",
+    "roleName": "pinpointLambdaRolebb258f09",
+    "cloudformationPolicyName": "cloudformationPolicybb258f09",
+    "cloudWatchPolicyName": "cloudWatchPolicybb258f09",
+    "pinpointPolicyName": "pinpointPolicybb258f09",
+    "authPolicyName": "pinpoint_amplify_bb258f09",
+    "unauthPolicyName": "pinpoint_amplify_bb258f09",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

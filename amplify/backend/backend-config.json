@@ -1,19 +1,11 @@
 {
-  "api": {
-    "amplitudeproxy": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "amplitudeproxy"
-        }
-      ],
+  "analytics": {
+    "regenerable": {
       "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    },
+      "service": "Pinpoint"
+    }
+  },
+  "api": {
     "regenerable": {
       "dependsOn": [],
       "output": {
@@ -69,31 +61,7 @@
       "service": "Cognito"
     }
   },
-  "function": {
-    "amplitudeproxy": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_amplitudeproxy_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplitudeproxy"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplitudeproxy_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplitudeproxy"
-        }
-      ]
-    }
-  },
+  "function": {},
   "storage": {
     "s3regenerablestorage623682d8": {
       "dependsOn": [],
